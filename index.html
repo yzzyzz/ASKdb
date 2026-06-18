@@ -3,8 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASKdb — AI Database Assistant</title>
-<meta name="description" content="Talk to your database in plain English. AI generates SQL, you confirm, results appear. Your data never leaves your machine.">
+<title>ASKdb — AI Database Client | Natural Language to SQL for Mac</title>
+<meta name="description" content="ASKdb is a privacy-first AI database client for macOS. Ask questions in plain English, get SQL instantly. Supports MySQL, PostgreSQL, SQLite. Your data never leaves your machine.">
+<meta name="keywords" content="database client, AI SQL, natural language SQL, MySQL client, PostgreSQL client, SQLite, macOS app, privacy database, DBA tool, query builder">
+<meta name="author" content="ASKdb">
+<link rel="canonical" href="https://yzzyzz.github.io/ASKdb/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ASKdb — AI Database Client for Mac">
+<meta property="og:description" content="Talk to your database in plain English. AI writes SQL, you confirm, results appear. Privacy-first: your data never leaves your machine.">
+<meta property="og:url" content="https://yzzyzz.github.io/ASKdb/">
+<meta property="og:image" content="https://yzzyzz.github.io/ASKdb/screenshot.webp">
+<meta property="og:site_name" content="ASKdb">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASKdb — AI Database Client for Mac">
+<meta name="twitter:description" content="Natural language to SQL. Privacy-first. Supports MySQL, PostgreSQL, SQLite.">
+<meta name="twitter:image" content="https://yzzyzz.github.io/ASKdb/screenshot.webp">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ASKdb",
+  "description": "AI-powered database client that converts natural language to SQL. Supports MySQL, PostgreSQL, and SQLite. Privacy-first — your data never leaves your machine.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "macOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "downloadUrl": "https://github.com/yzzyzz/ASKdb/releases/latest",
+  "screenshot": "https://yzzyzz.github.io/ASKdb/screenshot.webp",
+  "softwareVersion": "1.0",
+  "author": {
+    "@type": "Organization",
+    "name": "ASKdb"
+  }
+}
+</script>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
@@ -169,9 +210,9 @@ footer a:hover { color: var(--accent); }
   </div>
 </header>
 
-<section>
+<section aria-labelledby="features-heading">
   <div class="container">
-    <h2>Core Features</h2>
+    <h2 id="features-heading">Core Features</h2>
     <div class="features-grid">
       <div class="feature-card">
         <h3>Natural Language to SQL</h3>
@@ -201,9 +242,9 @@ footer a:hover { color: var(--accent); }
   </div>
 </section>
 
-<section class="privacy-section">
+<section class="privacy-section" aria-labelledby="privacy-heading">
   <div class="container">
-    <h2>Privacy-First Design</h2>
+    <h2 id="privacy-heading">Privacy-First Design</h2>
     <p style="text-align:center; color:var(--text-muted); margin-bottom:32px; max-width:700px; margin-left:auto; margin-right:auto;">
       AI sees your schema structure so it can write correct SQL. AI never sees your data. Your credentials never leave the Keychain. You own every byte.
     </p>
@@ -228,9 +269,9 @@ footer a:hover { color: var(--accent); }
   </div>
 </section>
 
-<section>
+<section aria-labelledby="audience-heading">
   <div class="container">
-    <h2>Who Is This For?</h2>
+    <h2 id="audience-heading">Who Is This For?</h2>
     <div class="features-grid">
       <div class="feature-card">
         <h3>Product & Operations Teams</h3>
