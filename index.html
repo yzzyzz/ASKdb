@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASKdb — AI Database Assistant</title>
+<meta name="description" content="Talk to your database in plain English. AI generates SQL, you confirm, results appear. Your data never leaves your machine.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-dim: #1f6feb;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+/* Hero */
+header {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+header h1 span { color: var(--accent); }
+header .subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+.cta-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.btn:hover { border-color: var(--accent); text-decoration: none; }
+.btn-primary {
+  background: var(--accent-dim);
+  border-color: var(--accent-dim);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--accent); border-color: var(--accent); }
+
+/* Features */
+section { padding: 60px 0; }
+section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 24px;
+}
+.feature-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+.feature-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Privacy */
+.privacy-section {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.privacy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.privacy-item {
+  padding: 16px 0;
+}
+.privacy-item h4 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.privacy-item p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--text-muted); }
+footer a:hover { color: var(--accent); }
+
+@media (max-width: 600px) {
+  header { padding: 48px 0 36px; }
+  header h1 { font-size: 2rem; }
+  section { padding: 40px 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1><span>ASKdb</span></h1>
+    <p class="subtitle">Talk to your database like you'd talk to a colleague. AI generates SQL — your data never leaves your machine.</p>
+    <div class="cta-group">
+      <a href="#" class="btn btn-primary">Download for Mac</a>
+      <a href="#" class="btn">View on Mac App Store</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Core Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Natural Language to SQL</h3>
+        <p>Describe your goal in plain English. AI generates the SQL and provides a step-by-step execution breakdown — so you always know what's happening before you hit "Run."</p>
+      </div>
+      <div class="feature-card">
+        <h3>Multi-Database Support</h3>
+        <p>Natively supports MySQL, PostgreSQL, and SQLite. Manage multiple connections in a single app and switch freely between them.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Editable Result Tables</h3>
+        <p>Query results appear as intuitive tables with real pagination. Double-click any cell to edit in place and write changes back — no manual UPDATE statements needed.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Three-Tier Permission Control</h3>
+        <p>Choose your safety level: Read Only, Read & Write, or Full Access. Destructive statements always require explicit confirmation.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Built-in SQL Console</h3>
+        <p>Power users can type and execute raw SQL directly. The console coexists seamlessly with the AI chat — mix and match workflows.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Voice Input</h3>
+        <p>Speak your query and let speech-to-text fill in the prompt — hands-free data retrieval.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="privacy-section">
+  <div class="container">
+    <h2>Privacy-First Design</h2>
+    <p style="text-align:center; color:var(--text-muted); margin-bottom:32px; max-width:700px; margin-left:auto; margin-right:auto;">
+      AI sees your schema structure so it can write correct SQL. AI never sees your data. Your credentials never leave the Keychain. You own every byte.
+    </p>
+    <div class="privacy-grid">
+      <div class="privacy-item">
+        <h4>Schema Only, Never Row Data</h4>
+        <p>Only table names, column names, and types are sent to AI. Actual row data is never transmitted.</p>
+      </div>
+      <div class="privacy-item">
+        <h4>Bring Your Own AI</h4>
+        <p>No bundled cloud provider. You configure your own endpoint and key. Requests go directly from your machine.</p>
+      </div>
+      <div class="privacy-item">
+        <h4>Zero Data Collection</h4>
+        <p>No analytics, no telemetry, no usage tracking. The app does not phone home.</p>
+      </div>
+      <div class="privacy-item">
+        <h4>Secure Credential Storage</h4>
+        <p>Passwords and API keys stored in macOS Keychain — encrypted by the OS, never in plain text on disk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Who Is This For?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Product & Operations Teams</h3>
+        <p>Get database insights without learning SQL. Ask questions, get answers.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Developers</h3>
+        <p>Query quickly without crafting SQL from memory. Speed up your data workflow.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Security-Conscious Teams</h3>
+        <p>Refuse to send production data to third-party services? ASKdb keeps everything local.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 ASKdb. All rights reserved.</p>
+    <p style="margin-top:8px;">
+      <a href="mailto:c1020378873@qq.com">Contact</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
