@@ -134,6 +134,19 @@ footer {
 footer a { color: var(--text-muted); }
 footer a:hover { color: var(--accent); }
 
+/* Screenshot */
+.hero-screenshot {
+  margin: 40px auto 0;
+  max-width: 800px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.hero-screenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 600px) {
   header { padding: 48px 0 36px; }
   header h1 { font-size: 2rem; }
@@ -149,6 +162,9 @@ footer a:hover { color: var(--accent); }
     <p class="subtitle">Talk to your database like you'd talk to a colleague. AI generates SQL — your data never leaves your machine.</p>
     <div class="cta-group">
       <a href="https://github.com/yzzyzz/ASKdb/releases/latest" class="btn btn-primary">Download for Mac</a>
+    </div>
+    <div class="hero-screenshot">
+      <img src="screenshot.webp" alt="ASKdb — Chat with your database, AI generates SQL" loading="lazy">
     </div>
   </div>
 </header>
