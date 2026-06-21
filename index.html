@@ -175,14 +175,26 @@ footer {
 footer a { color: var(--text-muted); }
 footer a:hover { color: var(--accent); }
 
-/* Screenshot */
-.hero-screenshot {
+/* Screenshot Gallery */
+.gallery {
   margin: 40px auto 0;
-  max-width: 800px;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.gallery a {
+  display: block;
   border: 1px solid var(--border);
   overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
 }
-.hero-screenshot img {
+.gallery a:hover {
+  border-color: var(--accent);
+  transform: scale(1.02);
+  text-decoration: none;
+}
+.gallery img {
   width: 100%;
   height: auto;
   display: block;
@@ -192,6 +204,7 @@ footer a:hover { color: var(--accent); }
   header { padding: 48px 0 36px; }
   header h1 { font-size: 2rem; }
   section { padding: 40px 0; }
+  .gallery { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -204,8 +217,10 @@ footer a:hover { color: var(--accent); }
     <div class="cta-group">
       <a href="https://github.com/yzzyzz/ASKdb/releases" class="btn btn-primary">Download on GitHub</a>
     </div>
-    <div class="hero-screenshot">
-      <img src="screenshot.webp" alt="ASKdb — Chat with your database, AI generates SQL" loading="lazy">
+    <div class="gallery">
+      <a href="en-01-chat.webp" target="_blank"><img src="en-01-chat.webp" alt="ASKdb — AI chat generates SQL" loading="lazy"></a>
+      <a href="en-02-permission.webp" target="_blank"><img src="en-02-permission.webp" alt="ASKdb — Fine-grained query permissions" loading="lazy"></a>
+      <a href="en-03-pie.webp" target="_blank"><img src="en-03-pie.webp" alt="ASKdb — Chart visualization from query results" loading="lazy"></a>
     </div>
   </div>
 </header>
